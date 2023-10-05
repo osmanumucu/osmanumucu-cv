@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    background-color: #ffe4c4;
+}
+
 header {
     position: relative;
     left: 0;
@@ -15,11 +19,10 @@ header {
 
 header h4 {
     position: absolute;
-    left: 10%;
+    left: 8%;
     bottom: 1rem;
     font-size: 1.6rem;
 }
-
 
 .intro {
     position: fixed;
@@ -28,8 +31,8 @@ header h4 {
     top: 0;
     width: 100%;
     height: 100vh;
-    background-color: #eee2dc;
-    transition: 3s;
+    background-color: bisque;
+    transition: 1s;
 }
 
 .logo-header {
@@ -49,11 +52,33 @@ header h4 {
 .logo.active {
     bottom: 0;
     opacity: 1;
-    transition: ease-in-out;
+    transition: ease-in-out 0.5s;
 }
 
 .logo.fade {
     bottom: 150px;
     opacity: 0;
-    transition: ease-in-out;
+    transition: ease-in-out 0.5s;
+}
+
+.rounded-circle{
+    width: 200px;
+    height: 200px;
+}
+
+#id {
+    background-image: url(pp.jpg);
+}
+
+@media (min-width: 992px) {
+    #section1 {
+        height: 701px;
+        background-color: #354853;
+        color: white;
+
+    }
+
+    #EigenFoto {
+        height: 400px;
+    }
 }
