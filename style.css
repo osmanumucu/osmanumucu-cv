@@ -6,7 +6,7 @@
 }
 
 nav {
-    background-color: #6ea06e ;
+    background-color: bisque;
 }
 
 header {
@@ -26,7 +26,7 @@ header h4 {
 
 .intro {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -61,10 +61,7 @@ header h4 {
     transition: ease-in-out 0.5s;
 }
 
-.rounded-circle{
-    width: 200px;
-    height: 200px;
-}
+
 
 #id {
     background-image: url(pp.jpg);
@@ -89,5 +86,50 @@ header h4 {
     .skills {
         width: 60px;
         height: 60px;
+    }
+
+    .rounded-circle{
+        width: 200px;
+        height: 200px;
+        z-index: 2;
+    }
+
+    .box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 220px;
+        height: 220px;
+    }
+
+    .box::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -10%;        
+        width: 135%;
+        height: 150%;
+        background: linear-gradient(#00ccff, #d400d4);
+        animation: animate 4s linear infinite;
+        z-index: 1;
+    }
+
+    .box::after {
+        content: '';
+        position: absolute;
+        inset: 1px;
+        background: #FAFAEB;
+        z-index: 0;
+
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 }
