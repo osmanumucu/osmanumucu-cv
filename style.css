@@ -73,12 +73,17 @@ header h4 {
 @media (min-width: 992px) {
     #section1 {
         height: 701px;
-        background-color: #354853;
-        color: white;
+        background-color: #FAFAEB;
+        color: #56514B;
 
     }
 
-    #EigenFoto {
-        height: 400px;
+    #infodiv {
+        width: 600px;
+    }
+
+    .skills {
+        width: 50px;
+        height: 50px;
     }
 }
