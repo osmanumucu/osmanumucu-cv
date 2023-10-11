@@ -1,27 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-}
-
-body {
-    overflow-y: hidden;
-}
-
-#container {
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://a-static.besthdwallpaper.com/istanbul-bosphorus-bridge-and-city-lights-wallpaper-2560x1440-92611_51.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-nav {
-    background-color: transparent;
-}
+/* intro */
 
 .intro {
     position: fixed;
@@ -60,25 +37,51 @@ nav {
     transition: ease-in-out 0.5s;
 }
 
+/* rest van css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: bisque;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+}
+
+.skills {
+    max-width: 60%;
+    height: auto;
+}
+
+
+#infodiv {
+    text-align: center;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: #56514B;
+}
+
+.rounded-circle{
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
+
+/* groot scherm */
+
 @media (min-width: 992px) {
-    #section1 {
-        height: 100vh;
-        color: #56514B;
-        overflow: auto;
-    }
-
-    .skillcss {
-        width: 40px;
-    }
-
-    #infodiv {
-        width: 600px;
-    }
-
-    .skills {
-        width: 60px;
-        height: 60px;
-    }
+    /* pp */
 
     .rounded-circle{
         width: 200px;
@@ -90,8 +93,8 @@ nav {
         position: relative;
         overflow: hidden;
         border-radius: 50%;
-        width: 220px;
-        height: 220px;
+        width: 205px;
+        height: 205px;
     }
 
     .box::before {
@@ -101,7 +104,7 @@ nav {
         left: -10%;        
         width: 135%;
         height: 150%;
-        background: linear-gradient(#00ccff, #d400d4);
+        background: linear-gradient(#ff0000, #ffffff);
         animation: animate 4s linear infinite;
         z-index: 1;
     }
@@ -109,7 +112,7 @@ nav {
     .box::after {
         content: '';
         position: absolute;
-        inset: 1px;
+        inset: 5px;
         background: #FAFAEB;
         z-index: 0;
 
@@ -123,5 +126,57 @@ nav {
         100% {
             transform: rotate(360deg);
         }
+    }
+
+    /* rest */
+
+    #section1 {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        color: #56514B;
+    }
+
+    #infodiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        text-align: start;
+        width: 35%;
+    }
+
+    #skilldiv {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .skills {
+        width: 100%;
+        height: auto;
+    }
+
+    #HobbieSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #HobbyIcons, #HobbyCarts {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .HobbyDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        border-radius: 10%;
+        width: 20%;
     }
 }

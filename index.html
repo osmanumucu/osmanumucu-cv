@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0b8bc9e8cc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -26,43 +27,78 @@
             </h1>
         </div>
 
-        <nav class="navbar d-flex justify-content-between align-items-center">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between align-items-center">
             <div class="container">
-                <a style="color: aliceblue;" class="navbar-brand " href="index.html">Osman Umucu</a>
-                <ul class="navbar-nav d-flex flex-row">
-                    <li class="nav-item mx-lg-2"><a style="color: aliceblue;" class="nav-link"
-                            href="#studie">Hobbies</a></li>
-                    <li class="nav-item mx-lg-2"><a style="color: aliceblue;" class="nav-link" href="#studie">Studie</a>
-                    </li>
-                    <li class="nav-item mx-lg-2"><a style="color: aliceblue;" class="nav-link" href="#studie">Studie</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand " href="index.html">Osman Umucu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#hobby">Hobby's</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Studie</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <section id="section1" class="container-fluid d-flex flex-row">
-            <div id="fotodiv" class="d-flex justify-content-center align-items-center col-lg-6 ">
+        <section id="section1" class="container-fluid">
+            <div id="fotodiv" class="d-flex justify-content-center align-items-center mt-3 col-lg-6 col-12">
                 <div class="d-flex justify-content-center align-items-center box">
                     <img class="rounded-circle" id="EigenFoto" src="pp.jpg" alt="">
                 </div>
+                
             </div>
 
-            <div id="infodiv" class="col-lg-6 d-flex flex-column justify-content-center align-items-start text-start">
+            <div id="infodiv">
                 <h1>Hi! Ik Ben Osman</h1>
                 <p>Ik ben 20 en ik ben student bij Bit Academy, ik ga de Front-End kant op en ik wil graag alles leren
                     over Front-End</p>
                 <p>Skills;</p>
-                <div id="skilldiv" class="d-flex flex-row justify-content-between mb-3">
-                    <img class="skills mr-2"
-                        src="images/html.png" alt="">
-                    <img class="skills mx-2"
-                        src="images/css.png" alt="">
-                    <img class="skills mx-2"
-                        src="images/javascript.png" alt="">
-                    <img class="skills mx-2"
-                        src="images/bootstrap.png" alt="">
+                <div id="skilldiv" class="row">
+                    <div class="col-3 col-lg-3">
+                        <img class="skills" src="images/html.png" alt="">
+                    </div>
+                    <div class="col-3 col-lg-3">
+                        <img class="skills" src="images/css.png" alt="">
+                    </div>
+                    <div class="col-3 col-lg-3">
+                        <img class="skills" src="images/javascript.png" alt="">
+                    </div>
+                    <div class="col-3 col-lg-3">
+                        <img class="skills" src="images/bootstrap.png" alt="">
+                    </div>
                 </div>
                 <p>Voor meer informatie kun je naar beneden scrollen ↓</p>
+            </div>
+        </section>
+
+        <section id="HobbieSection">
+            <h2>Wat zijn mijn hobbies?</h2>
+            <div id="HobbyIcons">
+                <i class="fa-solid fa-futbol"></i>
+                <i class="fa-solid fa-headset"></i>
+                <i class="fa-solid fa-laptop"></i>
+                <i class="fa-solid fa-plane"></i>
+            </div>
+            <div id="HobbyCarts">
+                <div class="HobbyDiv">
+                    <h5>Voetbal</h5>
+                </div>
+                <div class="HobbyDiv">
+                    <h5>Gamen</h5>
+                </div>
+                <div class="HobbyDiv">
+                    <h5>Coderen</h5>
+                </div>
+                <div class="HobbyDiv">
+                    <h5>Reizen</h5>
+                </div>
             </div>
         </section>
     </div>
