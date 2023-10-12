@@ -1,3 +1,42 @@
+.intro {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* -------------------------------------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,62 +44,39 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (max-width: 992px) {
-    nav {
-        background-color: bisque;
-    }
-    
-    #container {
-        margin: 0;
-        padding: 0;
-    }
-    
-    .SkillIcons {
-        max-width: 60%;
-        height: auto;
-    }
-    
-    
-    #infodiv {
-        text-align: center;
-    }
-    
-    #section1 {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        color: #56514B;
-    }
-    
-    .rounded-circle {
-        width: 200px;
-        height: 200px;
-        z-index: 2;
-    }
-    
-    .HobbyFoto {
-        width: 80%;
-        height: 70%;
-        border-radius: 5px;
-    }
+nav {
+    background-color: bisque;
+}
 
-    #AboutMeImages {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    #ComputerImg {
-        width: 50%;
-        border-radius: 10%;
-    }
-    
-    #BitAcademyLogo {
-        position: absolute;
-        width: 20%;
-        height: auto;
-    
-    }
+.SkillIcons {
+    max-width: 60%;
+    height: auto;
+}
+
+#InfoDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.Info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+.InfoText {
+    margin: 0;
+    margin-left: 5%;
+}
+
+#StudieSect {
+    margin: 0;
+}
+
+#StudieSect h1 {
+    text-align: center;
 }

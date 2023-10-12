@@ -9,15 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
     <title>Osman Umucu - CV</title>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="smallscreen.css">
+    <link rel="stylesheet" href="bigscreen.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylegroot.css">
-    <link rel="stylesheet" href="intro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/0b8bc9e8cc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -52,7 +54,7 @@
             </div>
         </nav>
 
-        <section id="IntroSect" class="container-fluid">
+        <section id="InleidingSect" class="container-fluid">
             <div id="fotodiv" class="d-flex justify-content-center align-items-center mt-3 col-lg-6 col-12">
                 <div class="d-flex justify-content-center align-items-center box">
                     <img class="rounded-circle" id="EigenFoto" src="pp.jpg" alt="">
@@ -60,9 +62,31 @@
 
             </div>
 
-            <div id="infodiv">
+            <div id="InleidingDiv">
                 <h1>Hi! Ik Ben Osman</h1>
                 <p>Op deze website vind je informatie over mij en mijn projecten</p>
+                <div id="InfoDiv">
+                    <div class="Info">
+                        <i style="width: 5%;" class="fa-regular fa-envelope"></i>
+                        <p class="InfoText">osmantalhaumucu40@gmail.com</p>
+                    </div>
+                    <div class="Info">
+                        <i style="width: 5%;" class="fa-solid fa-location-dot"></i>
+                        <p class="InfoText">Amsterdam</p>
+                    </div>
+                    <div class="Info">
+                        <i style="width: 5%;" class="fa-solid fa-building"></i>
+                        <p class="InfoText">Bit Academy</p>
+                    </div>
+                    <div class="Info">
+                        <i style="width: 5%;" class="fa-solid fa-phone"></i>
+                        <p class="InfoText">+31 624561584</p>
+                    </div>
+                    <div class="Info">
+                        <i style="width: 5%;" class="fa-solid fa-language"></i>
+                        <p class="InfoText">Turks, Nederlands, Engels</p>
+                    </div>
+                </div>
                 <p>Skills;</p>
                 <div id="SkillIconsDiv" class="row">
                     <div class="col-3 col-lg-3">
@@ -84,7 +108,7 @@
 
         <section id="AboutMeSect">
             <div id="OverMijDiv">
-                <div id="AboutMeImages">
+                <div id="AboutMeDiv">
                     <img id="ComputerImg"
                         src="https://cdn.dribbble.com/userupload/3071791/file/original-c2657a3a9c44212f7e1148b443e4ca88.png?resize=1200x900"
                         alt="">
@@ -92,10 +116,65 @@
                         src="https://kasteelgro.nl/wp-content/uploads/2021/01/bit-academy-1.jpg" alt="">
                 </div>
                 <div id="AboutMeText">
-                    <h2>Over Mij</h2>
+                    <h2>Persoonlijk Samenvatting</h2>
                     <p>Ik ben Osman Umucu en ik ben 20 jaar oud. Ik kom uit Turkije en ik woon al iets langer dan 8 jaar
-                        in Nederland. Ik ben tweedejaars student bij de Bit Academy. Ik ga de Front-End kant op en ik
-                        heb</p>
+                        in Nederland. Ik ben tweedejaars student bij de Bit Academy. Ik ga de Front-End kant op. Ik kan
+                        goed samenwerken met andere mensen en goed omgaan met wie dan ook. Mijn hobbies zijn; voetbal,
+                        gamen, coderen en reizen. Ik heb tot mijn 17'de op hoog nieveau gevoetbald. Ik heb zowel op
+                        school als daar heel veel geleerd over hoe je moet samenwerken als een team.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="StudieSect">
+            <h1>Studie</h1>
+            <div class="timeline">
+                <div class="checkpoint left-checkpoint">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Turkey.png" alt="">
+                    <div class="text-box">
+                        <h2>Turkije</h2>
+                        <small>2003-2016</small>
+                        <p style="margin-top: 10px;">Ik ben in Turkije geboren, dus mijn studie begon ook in Turkije. Ik
+                            heb tot de
+                            middelbareschool in Turkije gestudeerd.</p>
+                    </div>
+                </div>
+
+                <div class="checkpoint right-checkpoint">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Flag_of_the_Netherlands.png" alt="">
+                    <div class="text-box">
+                        <h2>Nederland en taal</h2>
+                        <small>2016-2017</small>
+                        <p style="margin-top: 10px;">Op mijn 12de ben ik naar Nederland verhuizd met mijn gezin. In het
+                            begin was het een beetje wennen, andere land, andere cultuur, andere mensen en een andere
+                            taal natuurlijk. Ik heb ongeveer binnen een jaar
+                            Nederlands geleerd en mijn advies voor middelbareschool was havo.</p>
+                    </div>
+                </div>
+
+                <div class="checkpoint left-checkpoint">
+                    <img src="https://msa.nl/wp-content/uploads/2020/06/logos-thumbs-metis.png" alt="">
+                    <div class="text-box ">
+                        <h2>Middelbareschool op Metis Montesorri Lyceum</h2>
+                        <small>2017-2021</small>
+                        <p style="margin-top: 10px;">Ik heb 4 jaar lang op middelbareschool gezeten. Havo 2 t/m havo 4.
+                            Op havo 4 kreeg ik
+                            informatica lessen en ik was door mijn informatica docent verwezen om naar Bit Academy te
+                            gaan. Ik vond toen web design ook heel leuk en daarom heb ik besloten om te stoppen met havo
+                            en mezelf te focusen op web design op Bit Academy.</p>
+                    </div>
+                </div>
+
+                <div class="checkpoint right-checkpoint">
+                    <img src="https://kasteelgro.nl/wp-content/uploads/2021/01/bit-academy-1.jpg" alt="">
+                    <div class="text-box">
+                        <h2>Bit Academy</h2>
+                        <small>2022-</small>
+                        <p style="margin-top: 10px;">Nadat ik gestopt was met havo ben ik gelijk begonnen met Bit
+                            Academy en dit is mijn 2de jaar.
+                            Ik heb heel veel geleerd over web design en ik wil nog verder veel meer leren...</p>
+                    </div>
                 </div>
             </div>
         </section>
