@@ -102,7 +102,7 @@
     }
 
     #AboutMeText {
-        width: 50%;
+        width: 52%;
         padding-right: 10%;
     }
 
@@ -123,9 +123,9 @@
     /* ---------------------------------------------------------------------------------- */
 
     #StudieSect {
-        background-color: bisque;
-        padding: 5%;
+        padding: 2%;
         box-sizing: border-box;
+        background-color: rgb(61, 61, 61);
     }
 
     .timeline {
@@ -163,8 +163,30 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-color: #ffffff;
+        background-color: white;
         padding: 5%;
         border-radius: 10px;
+        position: relative;
+    }
+
+    .left-checkpoint .text-box {
+        text-align: end;
+    }
+
+    .timeline-img-even {
+        position: absolute;
+        width: 100px;
+        top: -20%;
+        right: -10%;
+        border-radius: 50%;
+    }
+
+    .timeline-img-odd {
+        position: absolute;
+        width: 100px;
+        top: -20%;
+        left: -10%;
+        border-radius: 50%;
+        z-index: 1;
     }
 }
