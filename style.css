@@ -75,8 +75,30 @@ nav {
 
 #StudieSect {
     margin: 0;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: bisque;
 }
 
 #StudieSect h1 {
     text-align: center;
+}
+
+#ProjectenSect {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Projecten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    padding: 2%;
+    border-radius: 2%;
+    text-align: center;
+    margin-bottom: 30px;
 }

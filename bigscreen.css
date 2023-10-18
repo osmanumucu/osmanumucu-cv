@@ -122,12 +122,6 @@
 
     /* ---------------------------------------------------------------------------------- */
 
-    #StudieSect {
-        padding: 2%;
-        box-sizing: border-box;
-        background-color: rgb(61, 61, 61);
-    }
-
     .timeline {
         position: relative;
         max-width: 70%;
@@ -188,5 +182,25 @@
         left: -10%;
         border-radius: 50%;
         z-index: 1;
+    }
+
+    /* ---------------------------------------------------------------------------------- */
+
+    #ProjectenContainer {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+
+    .Projecten {
+        width: 30%;
+    }
+
+    .Projecten > img {
+        border-radius: 2%;
+        margin-bottom: 15px;
+        width: 100%;
     }
 }

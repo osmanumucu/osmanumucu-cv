@@ -66,5 +66,38 @@
         right: 15%;
     }
 
+    .text-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        padding: 5%;
+        border-radius: 10px;
+        position: relative;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .timeline-img-even {
+        position: absolute;
+        width: 50px;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+    }
+
+    .timeline-img-odd {
+        position: absolute;
+        width: 50px;
+        top: -2%;
+        left: -2%;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    #turkije {
+        top: 0;
+        left: 0;
+    }
 
 }
