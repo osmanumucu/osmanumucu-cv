@@ -100,4 +100,37 @@
         left: 0;
     }
 
+    #timeline {
+        flex-direction: column;
+    }
+
+    .tl-item {
+        width: 100%;
+        height: auto;
+        min-height: auto; /* Adjust to your preference for smaller screens */
+    }
+
+    #timeline > h1 {
+        left: 50%;
+        transform: translateX(-50%); /* Center the title on small screens */
+        text-align: center; /* Ensure the title is centered text-wise */
+    }
+
+    .tl-content,
+    .tl-year {
+        transform: none;
+        position: relative; /* Adjust the position for small screens */
+        top: auto;
+        left: auto;
+    }
+
+    .tl-bg {
+        position: relative; /* This might need to change depending on your layout */
+        height: auto; /* Adjust the height for small screens */
+    }
+
+    .tl-content h1,
+    .tl-year p {
+        font-size: smaller; /* Adjust the font size for small screens */
+    }
 }
