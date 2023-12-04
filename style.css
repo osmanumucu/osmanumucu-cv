@@ -183,6 +183,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #031625;
+    align-items: center;
     position: relative;
 
     &:hover {
@@ -604,7 +605,6 @@ nav {
         left: 45%;
         top: 3%;
     }
-
 
     /* ---------------------------------------------------------------------------------- */
 
